@@ -12,7 +12,9 @@ setting
 
 使用
     1、根据模板创建工程
-    django-admin startproject --template=
+    先clone
+    git clone https://github.com/dennis-xie/django-project-temp.git
+    django-admin startproject --template=django-project-temp projectname
     2、经常使用的变量放base.py 和 common/context_processors中，如STATIC_URL，在模板中就可以使用STATIC_URL变量
     <script  src="{{STATIC_URL}}js/jquery-2.2.3.min.js"></script>
     3、打印日志调试
