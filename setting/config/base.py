@@ -122,7 +122,9 @@ USE_TZ = True
 SITE_URL = '/'
 # 应用本地静态资源目录
 STATIC_URL = '%sstatic/' % SITE_URL
-
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'static'),
+)
 STATIC_ROOT = '/var/www/html/static/'
 #LOGIN_URL = "%s/login/?app_id=%s" % (BK_PAAS_HOST, APP_ID)
 LOGIN_URL =  '%saccount/login/' % SITE_URL
